@@ -5,6 +5,9 @@ TEMP= $(TEX:%.tex=%.aux) $(TEX:%.tex=%.log) $(TEX:%.tex=%.nav) $(TEX:%.tex=%.out
 all: $(PDF)
 	rm -f $(TEMP)
 
+clean:
+	rm -f $(TEMP) $(PDF)
+
 %.pdf: %.tex
 	pdflatex $^
 
