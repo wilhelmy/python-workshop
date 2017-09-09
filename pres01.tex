@@ -1,0 +1,171 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\usepackage[utf8]{inputenc}
+
+\usepackage{color}
+\usepackage{listings}
+
+\lstdefinestyle{BashInputStyle}{
+  language=bash,
+  basicstyle=\small\sffamily,
+  numbers=none,
+  %numberstyle=\tiny,
+  %numbersep=3pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{yellow!20},
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+
+
+\title{Python-Workshop}
+\subtitle{für blutige Anfänger*innen}
+\author{min, ente}
+\institute{Metalab Institute of Technology}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+% TOC, not sure we need it
+%
+%\section{Section 1}
+%\subsection{sub a}
+%
+%\begin{frame}
+%\frametitle{Outline}
+%\tableofcontents
+%\end{frame}
+
+\begin{frame}
+\frametitle{Inhalte des Kurses}
+\begin{itemize}
+	\item Python-Grundlagen \& Install Workshop
+	\item Informatik-Grundlagen
+	\item Datenstrukturen
+	\item Logik Basics
+	\item Kontrollstrukturen
+	\item Funktionen
+	\item Datentypen (int, float, str, list)
+	\item Exception Handling
+	\item Klassen, Objekte, Methoden, Vererbung
+	\item Funktionale Programmierung
+	\item Libraries
+	% Die hatten wir vergessen oder außer Acht gelassen, wäre auf jeden Fall eher später als früher dran
+	%\item Generatoren
+	%\item Dekoratoren
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Inhalte dieser Einheit}
+\begin{itemize}
+	\item		tbd
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle {Warum Python?}
+\begin{itemize}
+	\item Einsteigerfreundlich
+	\item Eingebaute Dokumentation
+	\item Interaktiver Modus (Kommandos direkt ausprobieren)
+
+	\item "Batteries Included"
+	\begin{itemize}
+		\item Python kommt mit einem großen Funktionsumfang in seiner Standard-Library
+		\item z.B. File IO, random number generator,
+			Sortieralgorithmen, Netzwerkprotokolle,
+			Datenstrukturen, Syscall-Interface, ...
+		\item Paketmanager zum Installieren von Extensions
+	\end{itemize}
+
+	\item Populär
+	\begin{itemize}
+		\item viel Support, große Community, viele fertige 3rd-Party-Libraries
+		\item viele große Pakete für Webentwicklung
+		\item Code ist durch die Größe der Community im Normalfall gut getestet
+	\end{itemize}
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle {Warum Python?}
+\begin{itemize}
+	
+	\item Wird von vielen bekannten Diensten verwendet 
+	\begin{itemize}
+		\item z.B. Youtube, Dropbox, Reddit, Instagram, das MOS, ...
+	\end{itemize}
+
+	\item Open Source 
+	\begin{itemize}
+		\item der Code des Python-Interpreters selbst ist offen und kann von allen gelesen, verstanden und verändert werden
+	\end{itemize}
+
+	\item Plattformunabhängig 
+	\begin{itemize}
+		\item der gleiche Code läuft auf allen Betriebsystemen, mit Ausnahme von plattformspezifischem Code wie z.B. bestimmte grafische Oberflächen oder das Syscall-Interface - später mehr
+	\end{itemize}
+	
+	\item Wenig weirde Sprachfeatures und unerwartetes Verhalten
+	\begin{itemize}
+		\item Ist natürlich subjektiv, aber weniger merkwürdige Syntax-Quirks als z.B. PHP oder Perl.
+		\item Es gibt einen offiziellen Style Guide (PEP-8) mit Best Practice
+		\item Dadurch sieht der Code von unterschiedlichen Leuten auch etwas einheitlicher aus.
+	\end{itemize}
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle {Ausführungsmodell}
+Es gibt zwei Modi zur Ausführung von Python-Code:
+\begin{itemize}
+	\item Interaktiver Modus
+	\begin{itemize}
+		\item Einzelne Befehle ausführen
+		\item Ergebnis des Befehls sofort sichtbar
+		\item zum experimentieren
+		\item als Taschenrechner
+	\end{itemize}
+
+	\item Scriptmodus
+	\begin{itemize}
+		\item Programm wird in Datei(en) geschrieben
+		\item Ganzes Programm wird in einem abgearbeitet
+		\item für Projekte
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle {Installation von Python}
+
+\begin{itemize}
+	\item Wir verwenden in diesem Kurs IDLE
+	\item Die Installation ist Betriebsystemabhängig
+	\item ... aber grundsätzlich sehr einfach
+
+	\begin{alertblock}{Achtung}
+		Wir verwenden Python 3! (nicht 2)
+	\end{alertblock}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle {GNU/Linux}
+	%\begin{lstlisting}
+	bleh
+	%\end{lstlisting}
+	%\lstinputlisting[caption=Debian/Mint/Ubuntu, style=BashInputStyle]{hello.c}
+\end{frame}
+
+
+\end{document}
