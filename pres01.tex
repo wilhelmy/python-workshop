@@ -1,23 +1,8 @@
 \documentclass{beamer}
 \usetheme{Boadilla}
 \usepackage[utf8]{inputenc}
-
-\usepackage{color}
-\usepackage{listings}
-
-\lstdefinestyle{BashInputStyle}{
-  language=bash,
-  basicstyle=\small\sffamily,
-  numbers=none,
-  %numberstyle=\tiny,
-  %numbersep=3pt,
-  frame=tb,
-  columns=fullflexible,
-  backgroundcolor=\color{yellow!20},
-  linewidth=0.9\linewidth,
-  xleftmargin=0.1\linewidth
-}
-
+\usepackage{minted}
+\usepackage{hyperref}
 
 \title{Python-Workshop}
 \subtitle{für blutige Anfänger*innen}
@@ -153,19 +138,70 @@ Es gibt zwei Modi zur Ausführung von Python-Code:
 	\item Die Installation ist Betriebsystemabhängig
 	\item ... aber grundsätzlich sehr einfach
 
+	\vspace*{1cm}
 	\begin{alertblock}{Achtung}
 		Wir verwenden Python 3! (nicht 2)
 	\end{alertblock}
 \end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[fragile]% fragile is needed for verbatim
 \frametitle {GNU/Linux}
-	%\begin{lstlisting}
-	bleh
-	%\end{lstlisting}
-	%\lstinputlisting[caption=Debian/Mint/Ubuntu, style=BashInputStyle]{hello.c}
+
+Debian/Ubuntu/Mint:
+
+	\begin{verbatim}
+	$ sudo apt install idle3
+	\end{verbatim}
+
+Archlinux:
+	\begin{verbatim}
+	$ sudo pacman -S python tk
+	\end{verbatim}
+
+OpenSuSE:
+	\begin{verbatim}
+	$ sudo zypper in python3-idle
+	\end{verbatim}
+
 \end{frame}
+
+\begin{frame}
+\frametitle{OS X}
+
+	\begin{itemize}
+		\item Python 3 und ActiveState Tcl/Tk herunterladen
+
+		\item \url{https://www.python.org/download/mac/tcltk/}
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Windows}
+	...
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Erstes Python-Programm}
+	
+	Traditionelles erstes Programm.
+
+	Gib ``Hello, World!'' am Bildschirm aus.
+
+	\vspace*{1cm}
+
+	\begin{minted}{python}
+		print("Hello, World!")
+	\end{minted}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Übungsaufgaben}
+	...
+\end{frame}
+
+
 
 
 \end{document}
